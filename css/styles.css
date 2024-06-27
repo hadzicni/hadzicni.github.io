@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+}
+
+p, label {
+    font-size: 1.1rem;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 20px;
+    background-color: #007bff;
+    padding: 0.75rem 1rem;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    transition: color 0.3s;
+    font-size: 1.1rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Container Styles */
+.container {
+    margin-bottom: 50px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.card img {
+    border-radius: 0;
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body h5 {
+    color: #007bff;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Media Gallery Styles */
+.media-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.media-gallery .media-item {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.media-gallery .media-item img,
+.media-gallery .media-item video,
+.media-gallery .media-item audio {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
