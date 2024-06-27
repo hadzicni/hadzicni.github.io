@@ -1,0 +1,42 @@
+/* styles.css */
+
+/* Allgemein */
+body {
+    background-color: lightgray;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Artikel */
+article {
+    width: 300px;
+    margin: 20px auto 0;
+    border: 1px dashed black;
+    background-color: gray;
+    padding: 10px;
+}
+
+/* Überschrift */
+article h1 {
+    background-color: orange;
+    padding: 10px;
+    margin: 0;
+    font-size: 28px;
+    position: sticky;
+    top: 0;
+}
+
+/* Absatz */
+article p {
+    text-align: justify; /* Blocksatz */
+    margin: 10px 0;
+}
+
+/* Bild */
+article img {
+    width: 100px;
+    border: 3px solid orange;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: block; /* Bild als Block-Element behandeln */
+}

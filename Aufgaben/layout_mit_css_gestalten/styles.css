@@ -1,0 +1,75 @@
+/* styles.css */
+
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Border-Box Modell für korrekte Größenberechnung */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Zentriert den Container horizontal im Browserfenster */
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+    grid-template-rows: min-content min-content auto min-content min-content; /* Minimale Höhen für header, nav, main, aside, footer */
+    grid-template-columns: 1fr 1fr; /* Zwei Spalten für main und aside */
+    gap: 10px; /* Abstand zwischen den Grid-Elementen */
+}
+
+header, nav, main, aside, footer {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+header, nav, footer {
+    grid-column: span 2; /* Spannt über beide Spalten */
+}
+
+nav ul {
+    display: flex; /* Horizontales Layout für die Navigation */
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+footer {
+    display: flex; /* Horizontales Layout für die Boxen im Footer */
+    justify-content: space-between; /* Abstand zwischen den Boxen */
+}
+
+footer div {
+    flex: 1; /* Flexibles Wachstum für gleichmäßige Aufteilung */
+}
+
+/* Spezifische Anpassungen für Inhaltsbereiche */
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+/* Stile für einzelne Artikel */
+article {
+    margin-bottom: 20px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article img {
+    display: block; /* Bild als Block-Element behandeln */
+    margin-bottom: 10px;
+}

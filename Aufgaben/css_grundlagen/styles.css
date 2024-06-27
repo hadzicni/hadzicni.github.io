@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* a) Schriftart und -größe für alle Elemente */
+body, h1, h2, h3, p, ul, ol, li, a {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+}
+
+/* b) Stil für den Wrapper */
+#wrapper {
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+/* c) Stil für Überschrift 1 */
+h1 {
+    font-size: 28px;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+/* d) Stil für Überschrift 2 */
+h2 {
+    font-size: 21px;
+    color: blue;
+}
+
+/* e) Stil für fette Passagen im Kopfbereich */
+header strong {
+    color: red;
+}
+
+/* f) Stil für Links */
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+}
+
+/* g) Stil für das Element mit der Klasse „active“ */
+li.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* h) Stil für den letzten geordneten Listenpunkt */
+ol li:last-child {
+    text-decoration: line-through;
+}

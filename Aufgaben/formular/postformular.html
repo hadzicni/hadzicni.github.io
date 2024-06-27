@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Beispiel Formular</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 0 10px 0 0;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="  " method="post">
+        <input type="text" name="name" placeholder="Ihr Name" required minlength="2" maxlength="100" autofocus>
+        <textarea name="longText" placeholder="Langer Text" required minlength="10" maxlength="500"></textarea>
+        <input type="number" name="number" min="1" max="100" required>
+        <input type="date" name="date" required>
+        <input type="password" name="password" required minlength="6">
+        <input type="email" name="email" required placeholder="beispiel@domain.com">
+        <input type="url" name="website" placeholder="https://www.example.com" required pattern="https?://.+">
+        <input type="tel" name="phone" placeholder="0123456789" pattern="[0-9]{10}" required>
+        <select name="dropdown" required>
+            <option value="">Bitte wählen</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+        <label><input type="radio" name="choice" value="choice1" required> Auswahl 1</label>
+        <label><input type="radio" name="choice" value="choice2"> Auswahl 2</label>
+        <label><input type="checkbox" name="multipleChoice1" value="mChoice1"> Mehrfachauswahl 1</label>
+        <label><input type="checkbox" name="multipleChoice2" value="mChoice2"> Mehrfachauswahl 2</label>
+        <input type="submit" value="Senden">
+    </form>
+</body>
+
+</html>
